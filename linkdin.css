@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar{
+    background-color: gray;
+    display: grid;
+    grid-template:
+    "top-bar" 30px/
+    1fr;
+}
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template:
+    "emptyL left-bar main right-bar emptyR" 1fr /
+    150px 1fr 2fr 1fr 150px;
+}
+ .emptyL, .emptyR{
+    background-color: #f3f2ef;
+} 
+.left-bar{
+    background-color: #f3f2ef;
+}
+.left-list{
+    display: grid;
+    grid-template: 
+    "leeft-list"100px /
+    1fr;
+    align-items: center;
+    width: 150px;
+    list-style: none;
+    
+    
+}
+ .profile{
+     border: solid 2px black;
+     border-radius: 10px;
+     padding: 40px;
+     margin: 15px;
+}
+.job{
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 15px;
+}
+.recent{
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 15px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.start-post{
+    display: grid;
+    background-color: #ebedef;
+    position: fixed;
+    margin: 10px;
+    width: 200px;
+}
+
+.right-bar{
+    background-color: #f3f2ef;
+}  
+.right-list{
+    list-style: none;
+}
+
+.news{
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 15px;
+}
+.courses{
+   border: solid 2px black;
+   border-radius: 10px;
+   padding: 40px;
+   margin: 15px;
+}
+.feed{
+   border: solid 2px black;
+   border-radius: 10px;
+   padding: 40px;
+   margin: 15px;
+}
