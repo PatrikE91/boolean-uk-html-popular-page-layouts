@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template: 
+    "channels left-bar main" 1fr /
+    70px 245px 1fr ;
+}
+.channels{
+    background-color: #e3e5e8;
+}
+
+.left-bar{
+    background-color: #f2f3f5;
+}
+.title{
+    border-bottom: solid 1px #cfd0d2;
+}
+.music {
+    width: 245px;
+    display: grid;
+    background-color: #ebedef;
+    position: fixed;
+    bottom: 0px
+
+}
+
+ul{
+    list-style: none;
+}
+.main{
+    background-color: #ffffff;
+}
+
+.chat{
+    background-color: #ebedef;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 77%;
+}
