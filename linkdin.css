@@ -24,15 +24,13 @@
 } 
 .left-bar{
     background-color: #f3f2ef;
+    grid-area: left-bar;
 }
 .left-list{
     display: grid;
-    grid-template: 
-    "leeft-list"100px /
-    1fr;
-    align-items: center;
-    width: 150px;
-    list-style: none;
+    grid-template-rows: 2fr 1fr 2fr;
+    
+
     
     
 }
@@ -56,20 +54,23 @@
 }
 
 .main{
-    display: flex;
-    justify-content: center;
+    grid-area: main;
     background-color: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .start-post{
     display: grid;
     background-color: #ebedef;
-    position: fixed;
+    place-self: center stretch;
     margin: 10px;
-    width: 200px;
+    border: 1px solid black;
+    height: 60px;
 }
 
 .right-bar{
+    grid-area: right-bar;
     background-color: #f3f2ef;
 }  
 .right-list{
@@ -93,4 +94,13 @@
    border-radius: 10px;
    padding: 40px;
    margin: 15px;
+}
+
+
+
+.emptyR{
+    grid-area: emptyR;
+}
+.emptyL{
+    grid-area: emptyL;
 }
